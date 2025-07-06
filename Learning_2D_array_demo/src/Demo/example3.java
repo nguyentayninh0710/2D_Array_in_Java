@@ -32,7 +32,8 @@ public class example3 {
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < column; j++) {
 				if (MyArray[i][j] > max) {
-					MyArray[i][j] = max;
+					max = MyArray[i][j];
+
 				}
 			}
 		}
