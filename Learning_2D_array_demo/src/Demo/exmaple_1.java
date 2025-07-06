@@ -21,8 +21,9 @@ public class exmaple_1 {
 		int[][] MyArray = new int[3][3];
 		for (int i = 0; i < MyArray.length; i++) {
 			for (int j = 0; j < MyArray[i].length; j++) {
-				System.out.println("Enter number (row " + i + ", column " + j + "): ");
+				System.out.print("Enter number (row " + i + ", column " + j + "): ");
 				MyArray[i][j]= Integer.parseInt(scanner.nextLine());
+				System.out.println();
 			}
 		}
 		
