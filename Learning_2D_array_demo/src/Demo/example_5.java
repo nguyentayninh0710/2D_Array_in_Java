@@ -119,7 +119,22 @@ public class example_5 {
 			}
 		}
 		System.out.println("Sum of diagonal: "+ sumDiagonal);
-		//
+		
+		//The sum of top-right and bottom-left 
+		
+		int sumTopRight = 0; 
+		int sumBottomLeft = 0; 
+		for (int i = 0; i < row; i++) {
+			for (int j = 0; j < row; j++) {
+				if(i < j) {
+					sumTopRight += ArrayTransposed[i][j];
+				} else if(i > j) {
+					sumBottomLeft += ArrayTransposed[i][j];
+				} 
+			}
+		}
+		System.out.println("Top-right sum: "+ sumTopRight);
+		System.out.println("Bottom-left sum: "+ sumBottomLeft);
 
 	}
 
